@@ -1,0 +1,35 @@
+body {
+				background-color: #7c6767;
+				margin: 20px;
+			}
+h1 {
+                color: #522cc6;
+            }
+h2 {
+                color: #09caaa;
+            }
+p {
+      color: rgb(217, 255, 0);
+    }
+h1 {
+      font-size: 4em;
+    }
+.content-box {
+  padding: 20px;
+  margin: 10px;
+  background-color: #c4aebb;
+  border: 1px solid #ccc;
+}
+table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+th, td {
+      border: 3px solid #161111;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #8b1111;
+    }
+    
