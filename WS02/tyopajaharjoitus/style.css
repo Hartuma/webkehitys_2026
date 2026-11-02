@@ -1,17 +1,32 @@
-body { background-image: url("lampi.jpg");
-background-repeat: no-repeat;background-position: center;background-attachment: fixed;background-size: cover; margin: 2px;
+body { 
+background-image: url("lampi.jpg"); 
+opacity: 100%;
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+background-size: cover; 
+margin: 2px;
 }				
 h1 {
-                color: #b4096f;
-            }
+   color: #f7faf7;
+       }
 h2 {
                 color: #eeeaea;
             }
 p {
-      color: rgb(199, 233, 209);
+      color: rgb(96, 225, 116);
+      font-size: 1.2em;
     }
 h1 {
       font-size: 2em;
+    }
+li {
+      color: rgb(96, 225, 116);
+      font-size: 1.2em;
+    }
+  h3 {
+      color: rgb(246, 134, 186);
+      font-size: 1.2em;
     }
 .content-box {
   padding: 5px;
@@ -26,13 +41,13 @@ table {
 th, td {
       border: 3px solid #0a0909;
       padding: 8px;
-      text-align: left;
+      text-align: center;
     }
     th {
       background-color: #568b11;
     }
      form {
-      display: display-listitem;
+      display: display;
       flex-direction: column;
       margin: 1%;
     }
@@ -46,8 +61,8 @@ th, td {
     }
         input[type="submit"] {
       background-color: #b8f330;
-      color: black;
-      padding: 5px;
+      color: rgb(196, 8, 111);
+      padding: 10px;
       border: none;
       border-radius: 4px;
       cursor: pointer;
