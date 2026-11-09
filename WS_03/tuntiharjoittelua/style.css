@@ -24,7 +24,6 @@ h1 {
    margin:0;
    padding:0;
       }
-
 h2 {
   color: #171801;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -120,9 +119,11 @@ th, td {
 
       .pseudo-list li:nth-child(odd) {
         background-color: rgb(237, 233, 243);
+        width: 25%;
       }
         .pseudo-list li:nth-child(even) {
         background-color: rgb(157, 230, 208);
+        width: 25%;
       }
      .filter-image {
         filter: grayscale(100%);
@@ -146,4 +147,21 @@ th, td {
         left: 0;
         top: 0;
         color: rgb(109, 235, 117);
+      }
+      .animation-box {
+        width: 350px;
+        height: 20px;
+        background-color: rgb(95, 171, 233);
+        position: relative;
+        animation: move 2s infinite alternate;
+        font-size: 1.2em;
+      }
+      
+      @keyframes move {
+        from {
+          left: 0;
+        }
+        to {
+          left: 100px;
+        }
       }
