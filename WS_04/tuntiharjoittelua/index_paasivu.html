@@ -7,28 +7,48 @@
     <!-- Tässä on viittaus ulkoiseen tyylitiedostoon, jonne kaikki tyylittelyt tulevat. -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Tuovin ensimmäinen html-sivu" />
+    <meta name="description" content="Tuovin ensimmäinen responsiivinen html-sivu" />
     <style></style>
   </head>
   <body>
+    <div class="responsive-box">Muuta näytön kokoa ja katso mitä tapahtuu!</div>
+    <div class="container">
+      <div class="grid-item">Kansallispuistot</div>
+      <div class="grid-item">Retkeily</div>
+      <div class="grid-item">Muut harrastukset</div>
+      <div class="menu">
+        <a href="#kansallispuistot">Kansallispuistot</a><br /><a
+          href="#retkeily"
+          >Retkeily</a
+        ><br /><a href="#muut-harrastukset">Muut harrastukset</a>
+      </div>
+    </div>
     <header>
-  <h1>Tervetuloa Tuovin ensimmäiselle sivulle!</h1>
-  <h1 style="color: rgb(74, 14, 241)"></h1>
-  <nav>
-    <ul>
-      <li><a href="#about">Retkeily</a></li>
-      <li><a href="#services">Muut harrastukset</a></li>
-      <li><a href="#contact">Yhteydenotto</a></li>
-    </ul>
-  </nav>
-</header>
+      <h1>Tervetuloa Tuovin ensimmäiselle sivulle!</h1>
+      <h1 style="color: rgb(74, 14, 241)"></h1>
+      <nav>
+        <ul>
+          <li><a href="#kansallispuistot">Kansallispuistot</a></li>
+          <li><a href="#harrastukseni">Harrastukseni</a></li>
+          <li><a href="#yhteydenotto">Yhteydenotto</a></li>
+        </ul>
+      </nav>
+      <div class="flex-container">
+        <div class="box">Kansallispuistot</div>
+        <div class="box">Harrastukset</div>
+        <div class="box">Yhteydenotto</div>
+      </div>
+    </header>
 
-<main>
-  <section id="kansallispuistoista">
-    <h2>Kansallispuistoista</h2>
-    <p>Kansallispuistot luonnonsuojelualueita luonnonsuojeluun, ulkoiluun ja retkeilyyn, luontoa kunnioittaen.</p>
-  </section>
-</main>
+    <main>
+      <section id="kansallispuistot">
+        <h1>Kansallispuistoista</h1>
+        <p>
+          Kansallispuistot luonnonsuojelualueita luonnonsuojeluun, ulkoiluun ja
+          retkeilyyn, luontoa kunnioittaen.
+        </p>
+      </section>
+    </main>
     <div>
       <div id="Kansallispuistot"></div>
       <div class="animation-box">Kansallispuistot yheiset luontoaarteemme</div>
@@ -70,7 +90,7 @@
     <h1>Harrastukseni</h1>
     <p>Asun Helsingissä Uudellamaalla. Minulla on monia harrastuksia.</p>
     <h2>Mieluisimmat harrastukseni</h2>
-      <ol>
+    <ol>
       <li>Ulkoilu ja retkeily</li>
       <li>Liikunta</li>
       <li>Kulttuuri</li>
@@ -87,10 +107,7 @@
         <h3>
           <div>
             <button class="transition-button">
-              Lisätietoja retkeilystä ja luontoon liittyvistä asioista löytyy
-              osoitteesta:<a href="https://www.luontoon.fi" target="_blank"
-                >Luontoon.fi;
-              </a>
+            Lisätietoja retkeilystä ja luontoon liittyvistä asioista löytyy osoitteesta:<a href="https://www.luontoon.fi" target="_blank" >Luontoon.fi</a>
             </button>
           </div>
         </h3>
@@ -130,8 +147,8 @@
       </form>
     </div>
     <footer>
-  <p>Copyright 2026</p>
-</footer>
+      <p>Copyright 2026</p>
+    </footer>
     <p>Tuovi Härmä</p>
   </body>
 </html>

@@ -48,7 +48,7 @@ li {
   margin: 5px;
   background-color: #308b62;
   border: 5px solid #ccc;
-  width: 50%;
+  width: 50%
 }
 
  #lisatietoja_retkeilystä {
@@ -56,7 +56,7 @@ li {
   margin: 5px;
   background-color: #308b62;
   border: 5px solid #ccc;
-  width: 25%;
+  width: 50%
 }
 
 table {
@@ -182,3 +182,63 @@ th, td {
           left: 100px;
         }
       }
+        .grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-item {
+  background-color: lightgreen;
+  padding: 20px;
+  text-align: center;
+}
+      .flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box {
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+}
+  .container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "menu";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 3px;
+  padding: 5px;
+
+}
+.container div {
+  background-color: rgb(236, 182, 225);
+  padding: 10px;
+}
+.container div.header {
+  grid-area: header;
+  text-align: center;
+}
+.container div.menu {
+  grid-area: menu;
+}
+.responsive-box {
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .responsive-box {
+    background-color: lightcoral;
+  }
+}
+
+@media (min-width: 601px) {
+  .responsive-box {
+    background-color: lightseagreen;
+  }
+}
