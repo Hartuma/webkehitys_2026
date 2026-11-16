@@ -193,7 +193,7 @@ th, td {
   padding: 20px;
   text-align: center;
 }
-      .flex-container {
+ .flex-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
