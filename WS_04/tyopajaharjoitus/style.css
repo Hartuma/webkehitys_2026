@@ -102,7 +102,7 @@ th, td {
 }
     .transition-button {
         background-color: lightblue;
-        padding: 10px 20px;
+        padding: 5px 5px;
         border: none;
         cursor: pointer;
         transition: background-color 0.3s ease;
