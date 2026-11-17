@@ -8,39 +8,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Tuovin ensimmäinen responsiivinen html-sivu"/>
-    </head>
+      content="Tuovin ensimmäinen responsiivinen html-sivu"
+    />
+  </head>
   <body>
     <div>
-    <div class="responsive-box">Muuta näytön kokoa ja katso mitä tapahtuu!</div>
+      <div class="responsive-box">
+        <!-- Tässä on yhdistetty responsiiviselle alueelle sivun otsikko-->
+        <h1>Tervetuloa Tuovin ensimmäiselle sivulle!</h1>
+      </div>
     </div>
-    <div class="grid-container"><!--Tässä kohtaa suuri ontelma saada luotua Grid, jossa olisi kolme kuvaa vierekkäin otsikot ylhäällä ja kuvat jakautuisivat näytölle tasaisesti! Missä virhe?-->
-      <div class= "grid-item">
-        <img src="./images/Rumakuru syksylla.jpg" alt="Rumakuru.">
-        <h3>Kiilopää</h3>
-      </div>
-      <div class="grid-item">
-      <img src="./images/Luukki.jpg" alt="Yksi Luukin useista lammista.">
-      <h3> Nuuksio ja Luukki</h3>
-      </div>
-      <div class="grid-item">
-      <img src="./images/Koli.jpg" alt="Herajärvi siintää.">
-      <h3>Koli</h3>
-       </div>
-       </div>
     <header>
-      <h1>Tervetuloa Tuovin ensimmäiselle sivulle!</h1>
+      <h1>Retkeilystä kansallispuistoissa ja muista harrastuksistani</h1>
       <nav>
         <ul>
           <li><a href="#kansallispuistot">Kansallispuistot</a></li>
           <li><a href="#lisatietoja_retkeilystä">Retkeily</a></li>
-          <li><a href="#harrastukset">Muut harrastukset</a></li>
+          <li><a href="#harrastukset">Harrastukseni</a></li>
         </ul>
       </nav>
     </header>
     <img
       src="./images/Tuovi_eräpirkko.png"
-      alt="Kuva Tuovista"
+      alt="Kuva Tuovista seisomasssa kalliolla lammen rannalla"
       class="filter-image"
     />
     <main>
@@ -48,13 +38,37 @@
         <h1>Kansallispuistoista</h1>
         <p>
           Kansallispuistot luonnonsuojelualueita luonnonsuojeluun, ulkoiluun ja
-          retkeilyyn, luontoa kunnioittaen.
+          retkeilyyn, luontoa kunnioittaen. Alla on muutama kuva eri
+          kansallispuistoista, joissa olen useasti retkeillyt.
         </p>
       </section>
     </main>
+    <div class="grid-container"> <!--Tässä lohkossa on säiliö, joka koostuu kolmesta osasta, itemista ja kussakin on erilainen kuva, kuvien koko vaihtelee näytön koon mukaan.-->
+      <div class="grid-item">
+        <h3>Kiilopää</h3>
+        <img
+          src="./images/Rumakuru syksylla.jpg"
+          alt=" Kiilopään Rumakuru ruskan väreissä."
+        />
+      </div>
+      <div class="grid-item">
+        <h3>Nuuksio ja Luukki</h3>
+        <img
+          src="./images/Luukki.jpg"
+          alt="Yksi Luukin useista upeista lammista alkusyksyn väreissä"
+        />
+      </div>
+      <div class="grid-item">
+        <h3>Koli</h3>
+        <img
+          src="./images/Koli.jpg"
+          alt="Kolin kansallispuiston Herajärvi siintää kaukana."
+        />
+      </div>
+    </div>
     <div>
       <div id="Kansallispuistot"></div>
-      <div class="animation-box">Kansallispuistot yheiset luontoaarteemme</div>
+      <div class="animation-box">Kansallispuistot yheiset luontoaarteemme</div><!--Tässä main osiossa on teksti, jossa on tyylittelyä ja mediaelementti, viittaus-->
       <blockquote cite="https://www.luontoon.fi/fi/artikkelit/kansallispuistot">
         Kansallispuistot ovat suuria luonnonsuojelualueita, joiden tehtävänä on
         säilyttää luonnon monimuotoisuus ja tarjota vierailijoille mahdollisuus
@@ -68,22 +82,37 @@
         säilyttämään näiden alueiden ainutlaatuisuuden myös tuleville
         sukupolville.
       </blockquote>
-      <div class="flex-container">
-        <div class="box">Kiilopää</div>
-        <div class="box">Nuuksio</div>
-        <div class="box">Koli</div>
+    </div>
+    <div class="flex-container"><!--Tässä osiossa on flex- asettelu, kolme kuvaa vierekkäin, joiden koko vaihtelee näytön koon mukaan-->
+      <div class="box1">
+        <img
+          src="./images/Rumakuru syksylla.jpg"
+          alt=" Kiilopään Rumakuru ruskan väreissä."
+        />
+      </div>
+      <div class="box2">
+        <img
+          src="./images/Luukki.jpg"
+          alt="Yksi Luukin useista upeista lammista alkusyksyn väreissä"
+        />
+      </div>
+      <div class="box3">
+        <img
+          src="./images/Koli.jpg"
+          alt="Kolin kansallispuiston Herajärvi siintää kaukana."
+        />
       </div>
     </div>
     <h1>Harrastukseni</h1>
-    <p>Asun Helsingissä Uudellamaalla. Minulla on monia harrastuksia.</p>
+    <p>Asun Helsingissä Uudellamaalla. Minulla on monia harrastuksia.</p> <!--Paragraf-tekstiä-->
     <h2>Mieluisimmat harrastukseni</h2>
-    <ol>
+    <ol> <!--numeroitu lista-->
       <li>Ulkoilu ja retkeily</li>
       <li>Liikunta</li>
       <li>Kulttuuri</li>
     </ol>
     <h2>Mieluisimmat retkeilykohteet</h2>
-    <ul class="pseudo-list">
+    <ul class="pseudo-list"> <!--listaus asioista, jotka eivät ole missään tietyssä järjestyksessä-->
       <li>Kiilopää, Sodankylä</li>
       <li>Nuuksio ja Luukki, Espoo</li>
       <li>Koli, Lieksa</li>
@@ -93,7 +122,7 @@
       <div id="lisatietoja_retkeilystä">
         <h3>
           <div>
-            <button class="transition-button">
+            <button class="transition-button"><!--Transitionappi, jossa värit vaihtuu-->
               Lisätietoja retkeilystä ja luontoon liittyvistä asioista löytyy
               osoitteesta:<a href="https://www.luontoon.fi" target="_blank"
                 >Luontoon.fi</a
@@ -108,7 +137,7 @@
         Alla on jaottelu muista harrastuksista, joita ovat liikunta ja
         kulttuuriharrastukset.
       </p>
-      <table>
+      <table><!--Taulukko-->
         <tr bgcolor="green">
           <th>Liikuntaharrastukset:</th>
           <th>Kulttuuriharrastukset:</th>
@@ -127,12 +156,12 @@
         </tr>
       </table>
     </div>
-    <div class="content-box">
+    <div class="content-box"><!--Sisältöboksi-->
       <a>
         Mikäli haluat ottaa minuun yhteyttä, voit täyttää alla olevat tiedot.</a
       >
       <form>
-        <div class="animation-box_2">Yhteydenotto</div>
+        <div class="animation-box_2">Yhteydenotto</div> <!--animoitu palkki-->
         <label for="name">Nimi:</label>
         <input type="text" id="name" name="name" /><br /><br />
         <label for="email">Email:</label>
@@ -140,7 +169,7 @@
         <input type="submit" value="Lähetä" />
       </form>
     </div>
-    <footer>
+    <footer><!--Footer-osio-->
       <p>Copyright 2026</p>
     </footer>
     <p>Tuovi Härmä</p>

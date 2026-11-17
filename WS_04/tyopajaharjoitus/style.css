@@ -209,7 +209,7 @@ th, td {
 
 .responsive-box {
   padding: 20px;
-  text-align: center;
+  align-content: center;
 }
 
 @media (max-width: 600px) {
@@ -224,13 +224,25 @@ th, td {
 }
 .flex-container {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  gap: 10px;
+   background-color: #568b11;
+}
 }
 
-.box {
-  background-color: lightblue;
-  padding: 20px;
-  text-align: center;
+.flex-container > div {
+  flex: 1;
+  min-width: 0;
+  
 }
+
+.flex-container img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover; 
+  display: block; 
+ 
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
