@@ -271,36 +271,35 @@ th, td {
         background-color: lightblue;
       }
     }
-   /* Container for flexboxes */
+   /* Container flexbokseille */
 .container {
   display: flex;
   flex-wrap: wrap;
 }
 
-/* Create four equal columns */
+/* luodaan yhtä suuret sarakkkeet */
 .column {
   flex: 25%;
   padding: 20px;
 }
 
-/* On screens that are 992px wide or less, go from four columns to two columns */
+/* Kun näyttö on 992px leveä tai vähemmän, muuta neljästä sarakkeesta kahteen */
 @media screen and (max-width: 992px) {
   .column {
     flex: 50%;
   }
 }
 
-/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+/* Kun näyttö on  600px  leveä tai vähemmän, laita sarkakkeet päällekkäin */
 @media screen and (max-width: 600px) {
   .container {
     flex-direction: column;
   }
-/* Hide checkbox and hamburger by default (desktop) */
+/* Tarkoitus on, että chekeck box ja hamurilaisikoni eivät näy oletuksena näytöllä */
 #nav-toggle { display: none; }
 
 .hamburger {
-  display: none;
-}
+  display: none;}
 
 /* Desktop Layout */
 .menu {
@@ -308,7 +307,7 @@ th, td {
 }
 
 /* Mobile Layout */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .hamburger {
     display: block;
   }
