@@ -13,29 +13,29 @@
   </head>
   <body>
     <div>
-      <div class="responsive-box">
+      <div class="media-query-box">
         <!-- Tässä on yhdistetty responsiiviselle alueelle sivun otsikko-->
         <h1>Tervetuloa Tuovin ensimmäiselle sivulle!</h1>
       </div>
     </div>
     <header>
       <h1>Retkeilystä kansallispuistoissa ja muista harrastuksistani</h1>
-       <nav class="responsive-nav">
-      <button class="menu-toggle">☰ Menu</button>
-      <ul class="nav-list">
-        <li><a href="#">Koti</a></li>
-        <li><a href="#">Retkeily</a></li>
-        <li><a href="#">Kansallispuistot</a></li>
-        <li><a href="#">Muut harrastukset</a></li>
-        <li><a href="#">Kysy lisää</a></li>
+      <nav>
+        <input type="checkbox" id="nav-toggle">
+         <label for="nav-toggle" class="hamburger">&#9776;</label>
+        <ul class="menu">
+        <li><a href="./index.html">Koti</a></li>
+        <li><a href="./Retkeily.html">Retkeily</a></li>
+        <li><a href="./kansallispuistot.html">Kansallispuistot</a></li>
+        <li><a href="./muut_harrastukset.html">Muut harrastukset</a></li>
       </ul>
-    </nav>
-
+      </nav>
+  
     </header>
     <img
-      src="./images/Tuovi_eräpirkko.png"
-      alt="Kuva Tuovista seisomasssa kalliolla lammen rannalla"
-      class="filter-image"
+      src="./images/Tuovi_eräpirkko.png" 
+      alt="Kuva Tuovista seisomasssa kalliolla lammen rannalla, responsiivinen"
+      class="responsive-image"
     />
     <main>
       <section id="kansallispuistot">
@@ -109,7 +109,34 @@
           alt="Kolin kansallispuiston Herajärvi siintää kaukana."
         />
       </div>
+      </div>
+      <div class="responsive.container">
+      <div class="column">
+      <p>
+        Urho Kekkosen kansallispuisto on vuonna 1983 perustettu, Savukosken,
+        Sodankylän ja Inarin kuntien alueella sijaitseva kansallispuisto.
+        Puiston pinta-ala on 2 549 neliökilometriä, ja se on Suomen toiseksi
+        suurin kansallispuisto. Se on myös Suomen toiseksi suosituin
+        kansallispuisto. Vuonna 2025 puistossa kävi 424 900 kävijää.
+        Kansallispuiston pohjoisen osan halki virtaa Suomujoki. Aluetta hoitaa
+        Metsähallitus ja se on osa UK-puisto-Sompio-Kemihaara-Natura 2000
+        -luonnonsuojelualuetta.
+      </p>
+      </div>
     </div>
+    <div class="column">
+      <p>
+        Kolin kansallispuisto on yksi tunnetuimmista Itä-Suomen luontokohteista
+        ja nähtävyyksistä, ja Suomen tunnetuimpia kansallismaisemia.
+        Kansallispuiston pinta-ala on 3 000 hehtaaria (30 km²), ja se sijaitsee
+        Joensuun ja Lieksan kaupunkien sekä Kontiolahden kunnan alueella.
+        Joensuussa sijaitseva osa kuului aiemmin Enon kuntaan. Kolin
+        kansallispuisto on perustettu lailla 10. huhtikuuta 1991, ja sitä on
+        laajennettu vuonna 1996. Kolin kansallispuisto oli vuonna 2025 Suomen
+        neljänneksi suosituin kansallispuisto. Siellä kävi 224 000 kävijää.
+      </p>
+    </div>
+ 
     <h1>Harrastukseni</h1>
     <p>Asun Helsingissä Uudellamaalla. Minulla on monia harrastuksia.</p>
     <!--Paragraf-tekstiä-->
