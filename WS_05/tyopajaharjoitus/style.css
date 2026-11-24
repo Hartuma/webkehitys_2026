@@ -295,10 +295,10 @@ img {
   .container {
     flex-direction: column;
   }
-}
-  box-sizing: border-box;{
-}
 
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
@@ -306,7 +306,7 @@ body {
 
 header {
   background-color:
-  padding: 10px;
+  padding 10px;
   text-align: center;
 }
 /* navigoinnin tyyli */
@@ -331,13 +331,18 @@ ul.navigointi li a:hover {
   background-color: #dddddd;
   color: black;
 }
-  .responsive-nav .navigointi {
+.responsive-nav .nav-list {
       display: flex;
       list-style: none;
     }
     
     @media (max-width: 600px) {
-      .responsive-nav .navigointi 
-              display: none;
-}
-
+      .responsive-nav .nav-list {
+        display: none;
+      }
+    
+      .responsive-nav .menu-toggle {
+        display: block;
+      }
+    }
+  }
